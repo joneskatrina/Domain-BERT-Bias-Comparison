@@ -9,7 +9,7 @@ This repo contains the code and results for evaluating whether domain-specific p
 - **C-WEAT** (C_WEAT_BiasEvaluation.ipynb) — measures gender bias in contextualised embeddings via Cohen's d effect size. Tests whether each model associates man vs woman more strongly with high-status vs supportive roles, using 28 domain-specific sentence templates per domain.
 
 Models evaluated and their HuggingFace names: 
-**BERT-base-uncased** (bert-base-uncased)
-**BioBERT** (dmis-lab/biobert-base-cased-v1.2)
-**FinBERT** (ProsusAI/finbert)
-**LegalBERT** (nlpaueb/legal-bert-base-uncased)
+- **BERT-base-uncased** (bert-base-uncased)  
+- **BioBERT** (dmis-lab/biobert-base-cased-v1.2)  
+- **FinBERT** (ProsusAI/finbert)  
+- **LegalBERT** (nlpaueb/legal-bert-base-uncased)  
