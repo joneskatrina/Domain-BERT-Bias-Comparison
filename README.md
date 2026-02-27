@@ -1,5 +1,5 @@
-# When BERT Specializes: 
-## How Domain Pre-Training Reshapes (Gender) Bias
+# When BERT Specializes:
+# How Domain Pre-Training Reshapes (Gender) Bias
 
 This repo contains the code and results for evaluating whether domain-specific pretraining (biomedical, financial, legal) amplifies or attenuates (gender) biases, compared to general-purpose BERT. Three complementary benchmarks are used: 
 
