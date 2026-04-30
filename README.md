@@ -35,39 +35,44 @@ Domain pre-training reshapes rather than uniformly amplifies gender bias and the
 | LegalBERT | `nlpaueb/legal-bert-base-uncased` | Legal texts, legislation, court decisions |
 
 ## Repository Structure
-├── CrowSPairsBiasEvaluation.ipynb   # CrowS-Pairs stereotype preference analysis         
-├── StereoSetBiasEvaluation.ipynb    # StereoSet LMS / SS / ICAT evaluation       
-├── C_WEAT_BiasEvaluation.ipynb      # C-WEAT gendered role association analysis         
-└── figures/                          # Output figures      
 
-├── code/       
-│   ├── CrowSPairsBiasEvaluation.ipynb   # CrowS-Pairs stereotype preference analysis       
-│   ├── StereoSetBiasEvaluation.ipynb    # StereoSet LMS / SS / ICAT evaluation       
-│   └── C_WEAT_BiasEvaluation.ipynb      # C-WEAT gendered role association analysis        
-├── data/     
-│   ├── C_WEAT/     
-│   │   └── C-WEAT_results.csv              # Cohen's d effect sizes per model and domain    
-│   ├── CrowS-Pair/     
-│   │   ├── CrowS-Pair-overallBias          # Overall stereotype preference rates per model    
-│   │   └── CrowS-Pairs_byBiasType         # Stereotype preference rates broken down by all 9 bias categories    
-│   └── StereoSet/    
-│       ├── stereoset_gender_bias_results.csv      # LMS, SS, ICAT scores for gender bias    
-│       ├── stereoset_overall_results.csv          # LMS, SS, ICAT scores aggregated across all bias types    
-│       ├── stereoset_profession_bias_results.csv  # LMS, SS, ICAT scores for profession bias     
-│       ├── stereoset_race_bias_results.csv        # LMS, SS, ICAT scores for race bias    
-│       └── stereoset_religion_bias_results.csv    # LMS, SS, ICAT scores for religion bias    
-├── figures/     
-│   ├── BERTModels.png                    # Overview diagram of the four BERT model variants    
-│   ├── C-WEAT_domain_comparisson.png     # Bar chart comparing base BERT vs domain models per domain (Fig. 6)    
-│   ├── C_WEAT_Heatmap.png               # Heatmap of Cohen's d effect sizes across all models and domains (Fig. 5)    
-│   ├── StereoSetgender_bias_metrics.png  # StereoSet LMS / SS / ICAT scores for gender bias (Fig. 4)     
-│   ├── StereoSetoverall_metrics.png      # StereoSet LMS / SS / ICAT scores across all bias types (Fig. 3)     
-│   ├── crows_pairs_biasTypes_stars.png   # CrowS-Pairs stereotype preference rates across 9 bias categories (Fig. 1)     
-│   └── icat_heatmap.png                 # StereoSet ICAT scores by bias type and model (Fig. 2)    
-├── Report_When_BERT_Specializes_...pdf   # Full written report    
-├── PaperPresentation.pdf                 # Paper presentation slides on WinoIdentity     
-└── ProjectPresentation.pdf              # Project presentation slides     
 ```
+Domain-BERT-Bias-Comparison/
+├── code/
+│   ├── CrowSPairsBiasEvaluation.ipynb
+│   ├── StereoSetBiasEvaluation.ipynb
+│   └── C_WEAT_BiasEvaluation.ipynb
+├── data/
+│   ├── C_WEAT/
+│   │   └── C-WEAT_results.csv
+│   ├── CrowS-Pair/
+│   │   ├── CrowS-Pair-overallBias
+│   │   └── CrowS-Pairs_byBiasType
+│   └── StereoSet/
+│       ├── stereoset_gender_bias_results.csv
+│       ├── stereoset_overall_results.csv
+│       ├── stereoset_profession_bias_results.csv
+│       ├── stereoset_race_bias_results.csv
+│       └── stereoset_religion_bias_results.csv
+├── figures/
+│   ├── BERTModels.png
+│   ├── C-WEAT_domain_comparisson.png
+│   ├── C_WEAT_Heatmap.png
+│   ├── StereoSetgender_bias_metrics.png
+│   ├── StereoSetoverall_metrics.png
+│   ├── crows_pairs_biasTypes_stars.png
+│   └── icat_heatmap.png
+├── Report_When_BERT_Specializes_...pdf
+├── PaperPresentation.pdf
+└── ProjectPresentation.pdf
+```
+
+**`code/`** — Jupyter notebooks for all three bias evaluations (CrowS-Pairs, StereoSet, C-WEAT).
+
+**`data/`** — Output CSVs from each evaluation, organised by benchmark. C-WEAT results include Cohen's *d* effect sizes per model and domain; CrowS-Pairs results include overall and per-category stereotype preference rates; StereoSet results include LMS, SS, and ICAT scores broken down by bias type.
+
+**`figures/`** — All plots generated from the analyses, including the C-WEAT heatmap (Fig. 5), domain comparison bar chart (Fig. 6), CrowS-Pairs category overview (Fig. 1), and StereoSet ICAT and metric plots (Figs. 2–4).
+
 
 ## Results Summary
 
