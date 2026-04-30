@@ -76,9 +76,9 @@ Domain-BERT-Bias-Comparison/
 
 ## Results Summary
 
-- **CrowS-Pairs**: BERT-base is the most biased model overall and on gender specifically. FinBERT scores closest to the fair-model ideal (0.481), but this likely reflects its formal training corpus suppressing stereotypical surface language rather than genuine bias reduction — a methodological artefact, not a real finding.
-- **StereoSet**: BERT-base and BioBERT perform best. FinBERT's severely degraded language modeling score (LMS = 40.43% vs. BERT's 69.85%) renders its stereotype scores uninterpretable.
-- **C-WEAT**: FinBERT and LegalBERT amplify male–high-status associations relative to base BERT in their respective domains. BioBERT reduces the extreme medical-domain bias found in BERT-base (d = 3.27 vs. 4.89), consistent with biomedical literature's increasing emphasis on clinical role diversity.
+- **CrowS-Pairs**: BERT-base is the most biased model overall and on gender specifically. FinBERT scores closest to the fair-model ideal (0.481), but this likely reflects its formal training corpus suppressing stereotypical surface language rather than genuine bias reduction.   
+- **StereoSet**: BERT-base and BioBERT perform best. For FinBERT, it`s degraded language modeling score (LMS = 40.43% vs. BERT's 69.85%) renders its stereotype scores uninterpretable. Highliting the need to consider language modeling ability when evaluationg bias. 
+- **C-WEAT**: FinBERT and LegalBERT amplify male–high-status associations relative to base BERT in their respective domains. BioBERT reduces the extreme medical-domain bias found in BERT-base (d = 3.27 vs. 4.89). 
 
 ## Full Report
 
